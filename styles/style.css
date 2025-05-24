@@ -6,7 +6,7 @@ body {
 
 .header {
     padding: 92px 50px 96px 50px;
-    height: 293px;
+    height: 100%;
     font-family: Raleway, sans-serif;
     font-weight: 400;
     display: grid;
@@ -53,13 +53,14 @@ body {
 .header__address {
     display: block;
     max-width: 240px;
-    justify-self: end;
 }
 
 .address {
     font-size: 18px;
     line-height: 1.35;
     font-style: normal;
+    display: flex;
+    justify-content: end;
 }
 
 .address_link {
@@ -149,7 +150,7 @@ body {
     font-weight: 400;
     font-size: 22px;
     line-height: 1.27;
-    border: solid 1px #fff;
+    border: solid 1px currentColor;
 }
 
                 /* lots */
@@ -176,6 +177,7 @@ body {
     min-width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 25px;
     justify-content: space-between;
     position: relative;
@@ -187,7 +189,6 @@ body {
 
 .lots__card-list-item {
     width: 334px;
-    height: 596px;
     min-height: 100%;
     margin: 30px 0;
     padding: 48px 40px;
@@ -251,9 +252,7 @@ body {
 
 .about {
     height: 100%;
-    min-height: 595px;
-    width: 100%;
-    min-width: 1052px;
+    width: 1052px;
     margin: 120px 24px 180px 24px;
     padding: 35px 0 0 47px;
     display: grid;
@@ -281,6 +280,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    margin-top: 100px;
 }
 
 .about__title {
